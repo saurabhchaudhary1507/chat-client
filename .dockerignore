@@ -1,5 +1,6 @@
 target/
 .mvn/
+!.mvn
 .mvnw
 Dockerfile
 .dockerignore
