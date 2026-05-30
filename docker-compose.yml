@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  chat-client:
+    build: .
+    image: chat-client:latest
+    ports:
+      - "8080:8080"
+    environment:
+      # Provide your API key via environment variable when running
+      - OPENAI_API_KEY
+      # optional: override the base URL if needed
+      - OPENAI_API_BASE_URL
+    restart: unless-stopped
+
